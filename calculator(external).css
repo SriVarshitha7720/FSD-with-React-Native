@@ -1,0 +1,47 @@
+.main{
+    height: 600px;
+    width:400px;
+    background-color: black;
+    margin: 90px;
+    border-radius: 20px;
+    display: flex;
+    justify-self: center;
+    
+}
+.display{
+    width:350px;
+    height:90px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 15px;
+}
+h2{
+    color: white;
+    position:absolute;
+    top:200px;
+    margin-left: 150px;
+}
+.buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .button {
+      background: white;
+      color: black;
+      font-size: 1.5rem;
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .button:hover {
+      background: #ddd;
+    }
+
+    .button:active {
+      background: #bbb;
+    }

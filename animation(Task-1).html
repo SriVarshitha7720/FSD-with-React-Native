@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Moving Bird Animation</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .scene {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to top, #87ceeb, #fceabb); /* Day sky */
+  }
+
+  .bird {
+    position: absolute;
+    top: 100px; /* Bird height */
+    left: -100px; /* Start offscreen */
+    width: 80px;
+    height: 80px;
+    background: url('https://www.freeiconspng.com/uploads/png-image-bird-28.png') no-repeat center/contain; /* Your bird image */
+    animation: flyBird 15s linear infinite; 
+  }
+
+  @keyframes flyBird {
+    0%   { left: -100px; }     /* Start offscreen left */
+    100% { left: 100vw; }      /* End offscreen right */
+  }
+
+</style>
+</head>
+<body>
+
+<div class="scene">
+  <div class="bird"></div>
+</div>
+
+</body>
+</html>

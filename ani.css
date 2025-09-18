@@ -1,0 +1,206 @@
+ body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .scene {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(to top, #87ceeb, #fceabb); /* Day sky */
+    animation: changeSky 20s linear infinite;
+  }
+
+  @keyframes changeSky {
+    0%   { background: linear-gradient(to top, #87ceeb, #fceabb); } /* Day */
+    49.9% { background: linear-gradient(to top, #87ceeb, #fceabb); } /* Day until almost 50% */
+    50%  { background: linear-gradient(to top, #0d1b2a, #1b263b); } /* Night */
+    100% { background: linear-gradient(to top, #0d1b2a, #1b263b); } /* Night */
+  }
+
+  .sun, .moon {
+    position: absolute;
+    top: 50px;
+    left: 80vw;
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .sun {
+    background-image: url('https://pics.clipartpng.com/Sun_PNG_Clip_Art-2161.png'); /* your sun image */
+    animation: sunAnim 20s linear infinite;
+  }
+
+  .moon {
+    background-image: url('https://www.pngarts.com/files/2/Full-Moon-PNG-Transparent-Image.png'); /* your moon image */
+    animation: moonAnim 20s linear infinite;
+  }
+
+  @keyframes sunAnim {
+    0%   { opacity: 1; }  /* Sun fully visible */
+    49.9% { opacity: 1; } /* Remains visible till halfway */
+    50%  { opacity: 0; }  /* Instantly gone at night */
+    100% { opacity: 0; }  /* stays hidden during night */
+  }
+
+  @keyframes moonAnim {
+    0%   { opacity: 0; }  /* Hidden during day */
+    49.9% { opacity: 0; } /* Stays hidden till night */
+    50%  { opacity: 1; }  /* Instantly appears at night */
+    100% { opacity: 1; }  /* stays visible during night */
+  }
+
+        .cloud {
+            position: absolute;
+            top: 100px; /* Adjust vertical position */
+            left: -200px; /* Start far left off-screen */
+            width: 320px; /* Size of cloud */
+            height: 180px;
+            background: url('https://purepng.com/public/uploads/large/purepng.com-small-single-cloudcloudskycloudyclearskynature-221519326618duicg.png') no-repeat center/contain; /* Your cloud image */
+            animation: moveCloud 10s linear infinite; /* Move continuously */
+        }
+        .cloud1 {
+            position: absolute;
+            top: 100px; /* Adjust vertical position */
+            left: -200px; /* Start far left off-screen */
+            width: 320px; /* Size of cloud */
+            height: 180px;
+            background: url('https://purepng.com/public/uploads/large/purepng.com-small-single-cloudcloudskycloudyclearskynature-221519326618duicg.png') no-repeat center/contain; /* Your cloud image */
+            animation: moveCloud 8s linear infinite; /* Move continuously */
+        }
+
+
+        @keyframes moveCloud {
+            0%   { left: -200px; }   /* Starting off-screen left */
+            100% { left: 100vw; }    /* Move to right edge of screen */
+        }
+
+
+
+        /* .cloud::before, .cloud::after {
+            content: '';
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            animation: moveCloud 6s linear forwards;
+        }
+
+        .cloud::before {
+            width: 80px;
+            height: 50px;
+            top: -35px;
+            left: 10px;
+             animation: moveCloud 6s linear forwards;
+        }
+
+        .cloud::after {
+            width: 100px;
+            height: 60px;
+            top: -40px;
+            right: 10px;
+             animation: moveCloud 6s linear forwards;
+        } */
+
+        .road {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 120px;
+            background: #000;
+           
+        }
+    .lane-line {
+      position: absolute;
+      top: 90px; /* Adjust based on car position */
+      width: 60px;
+      height: 6px;
+      background-color: white;
+    }
+
+    .lane-line:nth-child(1) { right:100px;top:60px;}
+    .lane-line:nth-child(2) { left:1200px; top:60px}
+    .lane-line:nth-child(3) { right:450px;top:60px}
+    .lane-line:nth-child(4) { right:650px;top:60px}
+    .lane-line:nth-child(5) { right:850px;top:60px}
+    .lane-line:nth-child(6){ right:1050px;top:60px;}
+    .lane-line:nth-child(7){ right:1250px;top:60px;}
+    .lane-line:nth-child(8){ right:1400px;top:60px;}
+
+
+     .car {
+      position: absolute;
+      bottom: 20px;
+      width: 350px;
+      height: 290px;
+      background: url('http://pluspng.com/img-png/car-png-lamborghini-car-png-image-1070.png') no-repeat center/contain; /* Replace with your car if you want */
+      animation: moveCar 6s linear forwards  infinite;
+    }
+
+    @keyframes moveCar {
+      from { left: -200px; }
+      to { left: 100vw; }
+    }
+    .bird {
+    position: absolute;
+    top: 100px; /* Bird height */
+    left: -100px; /* Start offscreen */
+    width: 100px;
+    height: 100px;
+    background: url('https://www.freeiconspng.com/uploads/png-image-bird-28.png') no-repeat center/contain; /* Your bird image */
+    animation: flyBird 15s linear infinite; /* 15s to cross, loops forever */
+  }
+
+  @keyframes flyBird {
+    0%   { left: -100px; }     /* Start offscreen left */
+    100% { left: 100vw; }      /* End offscreen right */
+  }
+    .divider {
+      position: absolute;
+      top: -30px;
+      left: 97px;
+      width: 6px;
+      height: 50px;
+      background-color: red;
+    }
+
+    
+
+        /*tree*/
+    .tree {
+        position: absolute;
+         bottom: 120px;
+    }
+
+    .tree .leaves {
+        width:70px;
+        height: 80px;
+        background: #228B22;
+        border-top-left-radius:25px;
+        border-top-right-radius:25px;
+        border-bottom-right-radius:5px;
+        border-bottom-left-radius:5px;
+        position: relative;
+        top: -60px;
+        box-shadow: 10px 10px 25px rgb(9, 220, 9);
+           
+    }
+        
+
+    .tree .trunk {
+         width: 20px;
+        height: 100px;
+        background: #8B4513;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5px 5px 0 0;
+        }
+
+    .tree.left { left: 15%; }
+    .tree.right { right: 15%; }
+    .tree.center-left { left: 30%; }
+    .tree.center-right { right: 30%; }

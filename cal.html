@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cherry+Bomb+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+HU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Titan+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: cadetblue;
+      font-family: Arial, sans-serif;
+    }
+
+    .calculator {
+      background: #111;
+      border-radius: 12px;
+      padding: 20px;
+      width: 260px;
+      box-shadow: 0px 20px 20px yellow;
+    }
+
+    .display {
+      background: rgb(74, 171, 210);
+      color: black;
+      font-size: 2rem;
+      text-align: right;
+      padding: 15px;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      height: 50px;
+      font-family: "Oritron", sans-serif;
+      box-shadow: 0px 0px 20px rgb(86, 240, 222);
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .button {
+      background: rgb(53, 53, 203) ;
+      color: black;
+      font-size: 1.5rem;
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .button:hover {
+      background: #ddd;
+    }
+
+    .button:active {
+      background: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="display" id="display">0</div>
+    <div class="buttons">
+      <button class="button">7</button>
+      <button class="button">8</button>
+      <button class="button">9</button>
+      <button class="button">÷</button>
+
+      <button class="button">4</button>
+      <button class="button">5</button>
+      <button class="button">6</button>
+      <button class="button">x</button>
+
+      <button class="button">1</button>
+      <button class="button">2</button>
+      <button class="button">3</button>
+      <button class="button">+</button>
+
+      <button class="button">0</button>
+      <button class="button">.</button>
+      <button class="button">=</button>
+      <button class="button">-</button>
+    </div>
+  </div>
+</body>
+</html>

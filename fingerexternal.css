@@ -1,0 +1,182 @@
+body {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.boy {
+  position: relative;
+  width: 150px;
+}
+
+.head {
+  background: #f2b07c;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.eye {
+  background: black;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+}
+
+.eye.left {
+  left: 20px;
+}
+
+.eye.right {
+  right: 20px;
+}
+
+.ear {
+  background: #f2b07c;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+}
+
+.ear.left {
+  left: -12px;
+}
+
+.ear.right {
+  right: -12px;
+}
+
+.mouth {
+  width: 40px;
+  height: 20px;
+  border-bottom: 3px solid black;
+  border-radius: 0 0 50px 50px;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+.hair {
+  background: black;
+  width: 80px;
+  height: 40px;
+  border-radius: 40px 40px 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.body {
+  position: relative;
+  margin-top: 10px;
+}
+
+.shirt {
+  background: #3f9dd6;
+  width: 80px;
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 5px;
+}
+
+.button {
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 50%;
+  margin: 4px auto;
+}
+
+.arm {
+  background: #f2b07c;
+  width: 20px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+}
+
+.arm.left {
+  left: -25px;
+  transform: rotate(10deg);
+}
+
+.arm.right {
+  right: -25px;
+  transform: rotate(-10deg);
+}
+
+.hand {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 24px;
+  height: 10px;
+  display: flex;
+  justify-content: space-between;
+  transform: rotate(10deg);
+}
+
+.arm.right .hand {
+  transform: rotate(-10deg);
+}
+
+.finger {
+  width: 4px;
+  height: 12px;
+  background: #f2b07c;
+  border-radius: 2px;
+}
+
+.shorts {
+  background: #1f3c65;
+  width: 80px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shorts::before,
+.shorts::after {
+  content: "";
+  width: 36px;
+  height: 40px;
+  background: #1f3c65;
+}
+
+.legs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: -5px;
+}
+
+.leg {
+  width: 20px;
+  height: 50px;
+  background: #f2e6d9;
+}
+
+.shoes {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2px;
+}
+
+.shoe {
+  width: 22px;
+  height: 20px;
+  background: darkred;
+  border-radius: 5px;
+}

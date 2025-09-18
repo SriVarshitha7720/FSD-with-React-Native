@@ -1,0 +1,23 @@
+.main{
+    width:500px;
+    height: 500px;
+    border: 2px solid pink;
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.mMWuzEPKzws6n-oi_7pAyQHaEo&pid=Api&P=0&h=180);
+    /* background-repeat: no-repeat; */
+    /* background-repeat:repeat; */
+    /* background-repeat:repeat-x; */
+    background-repeat:repeat-y;
+    /* background-size: contain; */
+    background-size:cover;
+     
+    background-position: top left;
+    /* background-position: top center;
+    background-position: top right;
+    background-position: center left;
+    background-position: center center;
+    background-position: center right;
+    background-position: bottom left;
+    background-position: bottom center;
+    background-position: bottom right; */
+     
+}

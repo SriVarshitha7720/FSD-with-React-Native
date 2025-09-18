@@ -1,0 +1,61 @@
+.demo,.demo1,.demo2{
+    height:150px;
+    width:150px;
+    position: relative;
+    left:0px;
+    animation-name: myanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* background-image: url("https://maya.technicalhub.io/assets/images/banner/thub-girl-1.png"); */
+
+}
+.demo{
+    background-color: red;
+}
+.demo1{
+    background-color: rgb(14, 68, 219);
+
+}
+.demo2{
+    background-color: green;
+   
+}
+@keyframes myanimation{
+    0%{
+        /* background-color: red; */
+        left:0px;
+        background-image: none;
+    }
+    50%{
+        background-color: aqua;
+        left:200px;
+        width:300px;
+    }
+    70%{
+        background-color: black;
+        left:100px;
+        width:500px;
+        
+    }
+    100%{
+        width:20px;
+        height: 20px;
+        background-color: blueviolet;
+    }
+}
+.demo3{
+    height:150px;
+    width:150px;
+    background-color: cadetblue;
+    animation-name: myanimation2;
+    animation-duration: 5s;
+}   
+@keyframes  myanimation2{
+    0%{
+        background-color: cadetblue;
+    }
+    100%{
+        background-color: chartreuse;
+    }
+    
+}
