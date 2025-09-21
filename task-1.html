@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height:100px;width:100px;background-color: black;margin:200px;">
+   
+
+    </div>
+    <button onclick="fun()">Right</button>
+    <button onclick="fun1()">Bottom</button>
+    <button onclick="fun2()">Top</button>
+    <button onclick="fun3()">Left</button>
+    <script>
+        function fun(){
+            document.getElementsByTagName("div")[0].style="background-color:red;height:100px;margin:200px;width:100px;position:relative;left:100px;"
+        }
+        function fun1(){
+            document.getElementsByTagName("div")[0].style="background-color:pink;height:100px;margin:200px;width:100px;position:relative;top:100px;"
+        }
+        function fun2(){
+            document.getElementsByTagName("div")[0].style="background-color:yellow;height:100px;margin:200px;width:100px;position:relative;bottom:100px;"
+        }
+        function fun3(){
+            document.getElementsByTagName("div")[0].style="background-color:skyblue;height:100px;margin:200px;width:100px;position:relative;right:100px;"
+        }
+    </script>
+</body>
+
+</html>

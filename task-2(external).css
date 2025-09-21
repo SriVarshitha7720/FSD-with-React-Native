@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+.mobile-options{
+    width:200px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color:darkgray;
+    transition: left 0.5s ease-out;
+    align-items: end;
+    position: absolute;
+    left:0px;
+}
+.mobile-options div{
+    padding: 10px;
+    font-size: 24px;
+    width:100%;
+    border-bottom: 1px solid rgb(56, 55, 55);
+    color:white;
+}
+.mobile-options div:hover{
+    background-color: gray;
+    color:red;
+    border-radius: 5px;
+    text-align: center;
+}
+.closee{
+    font-size: 30px;
+    display: fit-content;
+    color: white;
+}

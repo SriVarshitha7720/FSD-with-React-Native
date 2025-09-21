@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2(Menu)</title>
+    <link rel="stylesheet" href="task-2(external).css">
+</head>
+<body>
+    <div style="color:white;" class="menu-i" onclick="Open()">&#9776</div>
+    <div class="mobile-options">
+
+        <span class="closee" onclick="closeclick()">&times;</span>
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact</div>
+        <div>Pricing</div>
+        <div>services</div>
+    </div>
+    <script>
+        function closeclick(){
+            document.getElementsByClassName("mobile-options")[0].style.left="-220px";
+
+        }
+        function Open(){
+            document.getElementsByClassName("mobile-options")[0].style=left="0px;top:0px";
+        }
+    </script>
+</body>
+</html>
