@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+        var d={}
+        d[100]=2;
+        d["THUB"]=100;
+        d["Var"]=20;
+        console.log(d)
+        delete d['THUB']
+        console.log(d)
+        // console.log(d.'THUB')
+        console.log(Object.keys(d))
+        console.log(Object.values(d))
+        console.log(Object.entries(d))
+        Object.entries(d).map(ele=>{
+            console.log("Key:",ele[0],"Values :",ele[1])
+        })
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
