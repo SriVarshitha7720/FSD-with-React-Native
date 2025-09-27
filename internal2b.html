@@ -1,0 +1,35 @@
+b)<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Eligibility</title>
+    <script>
+        function getVoterInfo() {
+            let name = prompt("Enter your name:", "");
+            let age = prompt("Enter your age:", "");
+            let eligibility = (parseInt(age) >= 18) ? "Eligible to Vote" : "Not Eligible to Vote";
+            
+            if (name && age) {
+                document.getElementById("voterTable").innerHTML = `
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        
+                        <th>Eligibility</th>
+                    </tr>
+                    <tr>
+                        <td>${name}</td>
+                        <td>${age}</td>
+                        <td>${eligibility}</td>
+                    </tr>
+                `;
+            }
+        }
+    </script>
+</head>
+<body onload="getVoterInfo()">
+    <h2>Voter Information</h2>
+    <table border="1" id="voterTable"></table>
+</body>
+</html>

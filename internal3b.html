@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Through Object Data</title>
+    <script>
+        function displayData() {
+            let person = { name: "Alice", age: 25, city: "New York" };
+            let output = "";
+
+            // Using for-in loop
+            output += "<strong>For-in Loop:</strong><br>";
+            for (let key in person) {
+                output += ${key}: ${person[key]}<br>;
+            }
+
+            // Using forEach (on an array of object entries)
+            output += "<br><strong>ForEach Loop:</strong><br>";
+            Object.entries(person).forEach(([key, value]) => {
+                output += ${key}: ${value}<br>;
+            });
+
+            // Using for-of (on an array of object entries)
+            output += "<br><strong>For-of Loop:</strong><br>";
+            for (let [key, value] of Object.entries(person)) {
+                output += ${key}: ${value}<br>;
+            }
+            
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+</head>
+<body onload="displayData()">
+    <h2>Looping Through Object Data</h2>
+    <div id="output"></div>
+</body>
+</html>

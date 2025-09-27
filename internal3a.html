@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Simple Selectors */
+        p { color: blue; } /* Element selector */
+        #unique { font-weight: bold; } /* ID selector */
+        .highlight { background-color: yellow; } /* Class selector */
+        h1, h2 { text-align: center; } /* Group selector */
+        * { margin: 0; padding: 0; } /* Universal selector */
+        
+        /* Combinator Selectors */
+        div p { color: green; } /* Descendant selector */
+        div > p { font-size: 18px; } /* Child selector */
+        h2 + p { font-style: italic; } /* Adjacent sibling selector */
+        h2 ~ p { text-decoration: underline; } /* General sibling selector */
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors Demo</h1>
+    <h2>Different Selectors</h2>
+    <p id="unique">This is a paragraph with an ID.</p>
+    <p class="highlight">This paragraph has a class.</p>
+    <div>
+        <p>This is a child of div.</p>
+        <section>
+            <p>This is a descendant inside a section.</p>
+        </section>
+    </div>
+    <p>This is an adjacent sibling paragraph.</p>
+    <p>This is a general sibling paragraph.</p>
+</body>
+</html>

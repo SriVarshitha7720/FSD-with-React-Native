@@ -1,0 +1,33 @@
+c)<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object Example</title>
+    <script>
+        function displayDate() {
+            let now = new Date();
+            let output = "";
+
+            output += "<strong>Current Date and Time:</strong> " + now + "<br><br>";
+            output += "<strong>Year:</strong> " + now.getFullYear() + "<br>";
+            output += "<strong>Month:</strong> " + (now.getMonth() + 1) + "<br>";
+            output += "<strong>Date:</strong> " + now.getDate() + "<br>";
+            output += "<strong>Day:</strong> " + now.getDay() + "<br>";
+            output += "<strong>Hours:</strong> " + now.getHours() + "<br>";
+            output += "<strong>Minutes:</strong> " + now.getMinutes() + "<br>";
+            output += "<strong>Seconds:</strong> " + now.getSeconds() + "<br>";
+            
+            // let futureDate = new Date();
+            // futureDate.setDate(now.getDate() + 7);
+            // output += "<br><strong>Date After 7 Days:</strong> " + futureDate.toDateString() + "<br>";
+            
+            document.getElementById("output").innerHTML = output;
+        }
+    </script>
+</head>
+<body onload="displayDate()">
+    <h2>Date Object Properties and Methods</h2>
+    <div id="output"></div>
+</body>
+</html>

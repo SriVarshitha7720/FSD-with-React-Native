@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Pseudo-class selector */
+        a:hover {
+            color: red;
+            /* text-decoration: underline; */
+        }
+        
+        /* Pseudo-element selector */
+        p::first-letter {
+            font-size: 2em;
+            color: blue;
+            font-weight: bold;
+        }
+        
+        /* Attribute selector */
+        input[type="password"] {
+            border: 2px solid green;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Pseudo-class Selector Example</h2>
+    <a href="https://www.youtube.com/">Youtube</a>
+    
+    <h2>Pseudo-element Selector Example</h2>
+    <p>This is an example paragraph demonstrating the first-letter pseudo-element.</p>
+    
+    <h2>Attribute Selector Example</h2>
+    <input type="text" placeholder="Enter text here">
+    <input type="password" placeholder="Enter password">
+</body>
+</html>

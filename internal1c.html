@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Validation</title>
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let mobile = document.getElementById("mobile").value;
+            let email = document.getElementById("email").value;
+            
+            let namePattern = /^[A-Za-z][A-Za-z0-9]{5,}$/;
+            let mobilePattern = /^[0-9]{10}$/;
+            let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            
+            if (!namePattern.test(name)) {
+                alert("Invalid Name: Name should start with an alphabet, followed by alphanumeric characters, and be at least 6 characters long.");
+                return false;
+            }
+            
+            if (!mobilePattern.test(mobile)) {
+                alert("Invalid Mobile Number: It should contain exactly 10 digits.");
+                return false;
+            }
+            
+            if (!emailPattern.test(email)) {
+                alert("Invalid Email: Please enter a valid email format (e.g., example@domain.com).");
+                return false;
+            }
+            
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <label for="mobile">Mobile:</label>
+        <input type="text" id="mobile" name="mobile" required>
+        <br><br>
+        
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" name="email" required>
+        <br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

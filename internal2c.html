@@ -1,0 +1,41 @@
+                                                                                                                              <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Object Example</title>
+    <script>
+        function manipulateArray() {
+            let fruits = ["Apple", "Banana", "Cherry", "Mango"];
+            
+            // Display original array
+            document.getElementById("original").innerText = "Original Array: " + fruits.join(", ");
+            
+            // Use array properties and methods
+            fruits.push("Orange"); // Add element at the end
+            document.getElementById("push").innerText = "After push: " + fruits.join(", ");
+            
+            fruits.pop(); // Remove last element
+            document.getElementById("pop").innerText = "After pop: " + fruits.join(", ");
+            
+            fruits.unshift("Grapes"); // Add element at the beginning
+            document.getElementById("unshift").innerText = "After unshift: " + fruits.join(", ");
+            
+            fruits.shift(); // Remove first element
+            document.getElementById("shift").innerText = "After shift: " + fruits.join(", ");
+            
+            let sortedFruits = fruits.sort(); // Sort the array
+            document.getElementById("sort").innerText = "Sorted Array: " + sortedFruits.join(", ");
+        }
+    </script>
+</head>
+<body onload="manipulateArray()">
+    <h2>Array Object Properties and Methods</h2>
+    <p id="original"></p>
+    <p id="push"></p>
+    <p id="pop"></p>
+    <p id="unshift"></p>
+    <p id="shift"></p>
+    <p id="sort"></p>
+</body>
+</html>
