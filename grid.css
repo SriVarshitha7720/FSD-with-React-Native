@@ -1,0 +1,41 @@
+.parent{
+    height:800px;
+    width: 100%;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: repeat(4,1fr) ;
+    gap:100px;
+}
+.child1{
+    background-color: aqua;
+    align-items: end;
+    justify-items:right;
+    border:2px solid black;
+    width:200px;
+    height:200px;
+    
+    
+
+    
+}
+.child2{
+    background-color: rgb(246, 108, 2);
+    border:2px solid black;
+    justify-items: left;
+    width:200px;
+    height:200px;
+}
+.child3{
+    background-color: rgb(255, 0, 217);
+    border:2px solid black;
+    width:200px;
+    height:200px;
+}
+.child4{
+    background-color: rgb(246, 242, 1);
+    border:2px solid black;
+    width:200px;
+    height:200px;
+    
+}
